@@ -1,0 +1,1203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0465DFE8003F84148BE42315084C25FF /* CObjcFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D50D203287CA63F8E0A928A90ADA28CD /* CObjcFilter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		047D670AC6E6A2E16848A5E423B9C103 /* CommonMallocLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = C7092EFDE4557F8AF2744B4C90F1BAAF /* CommonMallocLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		082FE51A60FCD0C045141F6A78C6148A /* CBaseHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = A1F6AA09ECEC75C8A36043D1AF75394B /* CBaseHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0F001C904CD6B704194D396EBBA46F39 /* CCUIModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 39DAA82F7FAD9AAEB9A914E427924BFC /* CCUIModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		104F858BD1AD069E8AC47060BC58805A /* AllocationTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20834CC9F0C44CA3A237B169B67F6347 /* AllocationTracker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		114B78C995785F31B7DC7D466A40EE29 /* QQLeakFileUploadCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = B76F27ECE5FAA3C2542990541258DA69 /* QQLeakFileUploadCenter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1360419A73D5C29AAC6C8BD5FB8BE9A3 /* CPtrsHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 3295AE64483B247AF8FAA3B185B8F797 /* CPtrsHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B80F98F0D92134C26AD83DAAB339FD4 /* CObjcFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0182325FF88C8A8957B7BA4683680452 /* CObjcFilter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1C80D71C4B0D05AB8AB247230F255AB4 /* CLeakChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DB0FBB62979F6DAB69256BD23C0D935 /* CLeakChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		21C6C786673F038D38A1D379B43F8CBD /* OOMDetectorLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D33E0CF4F4110720B9B7F86B3295377 /* OOMDetectorLogger.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		24336E82AC76EEF661D779DDB48327AA /* CPtrsHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4BC7CEC52F6F3773202830D8A72C47A /* CPtrsHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		25BC18BC186050CB709F08FE7A674116 /* QQLeakChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7B6E245705160B804C43FBC0E2F8923 /* QQLeakChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2706232A44F3A172A95B5CFB3423EF05 /* CStackHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F3150514D9968D6E7365D8BB28E0E1 /* CStackHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		287ECC9CF6F8ECAE4E1BDCF9FB3AB762 /* CLeakedHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43DFAF519330FE91186F860DC473BCE0 /* CLeakedHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		28F462E049CF953EDCBB86B713C61042 /* QQLeakDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CB35C0B5526D0335B6D168ABADA2A04F /* QQLeakDeviceInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		29B46C0387FA1AE6F17F2D36DF3BC59B /* QQLeakMallocStackTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = B71955D48033D00E7B18811919117FD3 /* QQLeakMallocStackTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E937D2813B27A9CDD374B7D2B2489C3 /* AllocationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = C2AA0116074A4FDCCD8910BAA3A49CA8 /* AllocationTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		335FF2115E393185DA345BB985FAE266 /* OOMDetectorLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D430A785A247940E9A8967179B3361C /* OOMDetectorLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36651C1F68A5FAC68D865854EFCB0CA4 /* OOMMemoryStackTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97179E6C84AE3802E871AD90A815B95B /* OOMMemoryStackTracker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		38BB275A5BC73F8486478CE589B31E2A /* OOMStatisticsInfoCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BE68D29000F84F0AF0DF23C67382E1 /* OOMStatisticsInfoCenter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		391D4C561A9BCAEF31740EACFC61F6CE /* CMallocHook.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1D24CF763D86DC768C3591EC161D60 /* CMallocHook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4EB655A17556EB39A82D4AD276CCB20F /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = AE1CFBA1D441750C02200E22DC1EE69B /* fishhook.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4FF10D5297B2F92C0E2DA044B77583DC /* COOMDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64693D9FABFC0C47BE6EFC983C3B03F0 /* COOMDetector.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5682AD8167BAC044B8A72604CB21BC8F /* CStackHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D724CC6A799177AE110E54B83665BE6 /* CStackHelper.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		59E18E11003423B1880B2DC3468A7A16 /* OOMMemoryStackTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A0944C00CAE36C34CB7A498B65CA1A /* OOMMemoryStackTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		60A2AE8F9F32CD8B9DFBEFFA8793BEBE /* CMallocHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F4AE065829DAC04F62FA7803A7093D8 /* CMallocHook.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		680C8368C18AB72B5C80E5E704DD3E76 /* QQLeakDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B56D461EA92E25DCAAF3D4DCE3535FF0 /* QQLeakDeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6BB6891208354B5C9A3D0371EA578B73 /* CMemoryChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3B5E92D900B1FD8FCCEC5D0F529EA8 /* CMemoryChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C8098D86A0D406C85A7B7C703E610BB /* CCUIModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9FC50072C164E32A8AECDC5EAF22E /* CCUIModel-dummy.m */; };
+		6ED79E8F1BF4DEFE66C5EE94F0A2AE13 /* CStackChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9C1ABCF3BD6B8E9F7A58293AD8CE96 /* CStackChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6F98289F1A5552ECDD2243B37A43051E /* OOMDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4DB226EFFA9DFE570C59F7515C8EB2 /* OOMDetector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		77FCB051CF4B565C0256179564F9B74A /* CHeapChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC9FEB69A29A5D63B981A2FD06D4733C /* CHeapChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7828B989CF684D491D89D26ADBB155AC /* OOMDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = C38C09086DA9A440BDCAC778C22AF3C5 /* OOMDetector.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7F956FDB6052B10733550C0456E4AE96 /* QQLeakDataUploadCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A75AB05FAB506E61D319FEB07A5FF9 /* QQLeakDataUploadCenter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		80726F318C91E5105CFAE88F82FF20DF /* OOMDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99867057CF9D6E2D1A7689C3EE80920D /* OOMDetector-dummy.m */; };
+		8074A4010275669922B1F60798A83074 /* QQLeakChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = C40EC668C5203E88B462434FFF2E52BF /* QQLeakChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86FF1D203C1FDE72166967C072F6AC5B /* CThreadTrackingHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = DB06E0BD1D07AC91D5BFCF28AA05B4F3 /* CThreadTrackingHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87D37A80B2D33829428D2EE8C79AF142 /* QQLeakFileUploadCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4DE1F92CE40A791C54200D423AAA5F25 /* QQLeakFileUploadCenter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		89CFC5C85FB4F57C4B8241D447011283 /* OOMStatisticsInfoCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 973D023DA17BB6EF6ADD3B122908AC31 /* OOMStatisticsInfoCenter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8A40B2FEC896CA431ADF06AA2DA6C8DF /* COOMDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = A0CBE9B4ABF4EE7AFA736F6DB307AB3D /* COOMDetector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8BC1BCC00F2F50F574F8430034823EC7 /* HighSpeedLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CAF3C1EC69666D1412E3464FA6FED41 /* HighSpeedLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C56DD5B1CB5D9FF56FCECB58F1B44CB /* CThreadTrackingHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBCB9C97C4B37555BAEBACAEF37B0D54 /* CThreadTrackingHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8FC40543FC38C57CAD618567A8BF19DD /* CCUIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E15A02152B37FE5C9F5D92606CFA8E /* CCUIModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8FCFAC7F189F055ED21F5AD3CB33789F /* CSegmentChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 49376E1D2440F8F28F6F5A45784345E4 /* CSegmentChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93CB0A508C972E59F254C4F8EB6CE4F5 /* CommonMallocLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 441AD2546DACE4514E3B54F1BF47222F /* CommonMallocLogger.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		954E180C6AB9790ED463728E7FA746DC /* libOOMDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = ED791F4C683B2822DE3BFEC19310423C /* libOOMDetector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		97FB1DA9DB66466D64D5889B1303660E /* CMemoryChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2F3707C3E3580E9B297D0E75129E92A7 /* CMemoryChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		989E7AC2927ECE297470F0F022CC32B4 /* fishhook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3383E00E45B23DBB4D0CE67CA3B2B9B1 /* fishhook-dummy.m */; };
+		9B744F2E2F5A1ED05074D62AF09B1456 /* MemoryIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 125DA2C9ED31A7802C0EDD0A98753379 /* MemoryIndicator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A02CE8F045B717DCA1B92EAA1AE3F822 /* HighSpeedLogger.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CA6D6089CB64BF2146C6C8403B850 /* HighSpeedLogger.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A642E1BA9AB9150BB72D184F153A8636 /* CRegisterChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4425243155717F1BAEDE971EAF1BFE2 /* CRegisterChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AF3D717F5E6AA2372CA764052AC54F00 /* CLeakChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8F5D5E5D28597032BCCE959CED9C2C /* CLeakChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B42F109CBEF781BA567C50ED48A83C3A /* CircleReferenceCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = E516AB0E95A20A2721A8BD20B7002821 /* CircleReferenceCheck.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B5ED3E39758846A4EEC649C03AC8B6D8 /* QQLeakPredefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC4328E02F848659ACB1ECC208B3BF0 /* QQLeakPredefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB1CC097F0942D83783496CC6CC8EE24 /* Pods-Webview_Benchmark-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A64181A26962CC6F9E2F6C2B7DD84E /* Pods-Webview_Benchmark-dummy.m */; };
+		C2B4944395D0EB26CAE4AFAB77D8C64B /* CRegisterChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1720E8BAC11A8AE136998C65E9DB7A0B /* CRegisterChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3AEB0FD1D71A9200ABE05CD13D0D807 /* CHeapChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = A519D5C4C87B35761151F3AEDF5FFF42 /* CHeapChecker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C47F6BB39DC95AE20A018B1F6E442126 /* CLeakedHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C55B58441644BDA66F76B92CEE71EB2 /* CLeakedHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA262D6B253C8FB87896A5454EAD3BD0 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = E71101611CE12C9FB5366CC4C4191ABC /* fishhook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE7988E916DA5190C99423F488471AAE /* QQLeakDataUploadCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39E99EDECEC6B5C0224B47B51338FDEE /* QQLeakDataUploadCenter.mm */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CF182F4056C0C482ACC459DEA4629CA3 /* CircleReferenceCheck-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A5EC46C2584B4CCC90C7A713C478E0 /* CircleReferenceCheck-dummy.m */; };
+		D051D3BC099D9D17A3795AF02794CA4A /* CircleReferenceCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D910C83915E9560AEFBEBF66F5D5883 /* CircleReferenceCheck.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA920418B306FDC8271B01DED13BA6E2 /* CStackChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5469D7C21493088A15566E71A5D65DEB /* CStackChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DBE6689F0257A44ED7C225530C49E343 /* MemoryIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A069F1E41E6361888BAF3CE93AC6B0 /* MemoryIndicator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E3F3F642068F3F26966C4407CEE30315 /* CStacksHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4944A5581EA9CD59B1C88B16E871B58 /* CStacksHashmap.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F2B2B881141D77699B670111C8D92251 /* CStacksHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = B422C67E3FA2E4844A6D9DDED8DDF287 /* CStacksHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F462B3952BACD23789F5439FD2D428C8 /* CBaseHashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DEAA4C2152D4F457D5A132738ABD8AC /* CBaseHashmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F89602A3338356A8642139148E9BC495 /* QQLeakMallocStackTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = C87533741FCF240EFE02B9C74CB8A4F8 /* QQLeakMallocStackTracker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FCF5C2DAFBEC14D2229DD8FB2382BE3A /* CSegmentChecker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EC3CD3774A72B34B5F4482FDBDEC604 /* CSegmentChecker.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12617471CF379E54C137300E31EE6C5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0184E522F4EBAA7CCAB9AD5AECB9CE4;
+			remoteInfo = fishhook;
+		};
+		28A75CBE5E748A779CC59A261ED932B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF42E5C1A2282B0EC99192C33C1A67C2;
+			remoteInfo = CircleReferenceCheck;
+		};
+		8AE0F194C759EA53B4F02BE51FE44831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0184E522F4EBAA7CCAB9AD5AECB9CE4;
+			remoteInfo = fishhook;
+		};
+		BC3205E56C283C799EBC456E2B61DC3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32BD69475A3946861AFE7B0B355D30E8;
+			remoteInfo = OOMDetector;
+		};
+		C699C5DD43C8FD264A0DE9D6DEC7573E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF42E5C1A2282B0EC99192C33C1A67C2;
+			remoteInfo = CircleReferenceCheck;
+		};
+		FFCC754538CA226DCF30D216C0715CDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25867B77C67A225C826BCB0CC8BAF26E;
+			remoteInfo = CCUIModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0182325FF88C8A8957B7BA4683680452 /* CObjcFilter.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CObjcFilter.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/objc/CObjcFilter.mm; sourceTree = "<group>"; };
+		0D910C83915E9560AEFBEBF66F5D5883 /* CircleReferenceCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CircleReferenceCheck.h; path = CircleReferenceCheck/Classes/CircleReferenceCheck.h; sourceTree = "<group>"; };
+		0EC3CD3774A72B34B5F4482FDBDEC604 /* CSegmentChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CSegmentChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CSegmentChecker.mm; sourceTree = "<group>"; };
+		11703B33F4B0FF8ACFBB8D2B6FECB51E /* libfishhook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libfishhook.a; path = libfishhook.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		125DA2C9ED31A7802C0EDD0A98753379 /* MemoryIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MemoryIndicator.m; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/memoryIndicator/MemoryIndicator.m; sourceTree = "<group>"; };
+		139E473FD0E04B8EE54364A029A51CD7 /* Pods-Webview_Benchmark-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Webview_Benchmark-acknowledgements.plist"; sourceTree = "<group>"; };
+		1720E8BAC11A8AE136998C65E9DB7A0B /* CRegisterChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRegisterChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CRegisterChecker.h; sourceTree = "<group>"; };
+		1F712E57094375F5AA7F53B9B6640A24 /* oomgif.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = oomgif.gif; path = assets/oomgif.gif; sourceTree = "<group>"; };
+		20834CC9F0C44CA3A237B169B67F6347 /* AllocationTracker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = AllocationTracker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/hook/AllocationTracker.mm; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2CA7034865A1044B985129A101C4C694 /* CCUIModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCUIModel-prefix.pch"; sourceTree = "<group>"; };
+		2D33E0CF4F4110720B9B7F86B3295377 /* OOMDetectorLogger.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = OOMDetectorLogger.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/logger/OOMDetectorLogger.mm; sourceTree = "<group>"; };
+		2DEAA4C2152D4F457D5A132738ABD8AC /* CBaseHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CBaseHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CBaseHashmap.h; sourceTree = "<group>"; };
+		2F3707C3E3580E9B297D0E75129E92A7 /* CMemoryChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CMemoryChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CMemoryChecker.mm; sourceTree = "<group>"; };
+		3295AE64483B247AF8FAA3B185B8F797 /* CPtrsHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPtrsHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CPtrsHashmap.h; sourceTree = "<group>"; };
+		3383E00E45B23DBB4D0CE67CA3B2B9B1 /* fishhook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fishhook-dummy.m"; sourceTree = "<group>"; };
+		36A5EC46C2584B4CCC90C7A713C478E0 /* CircleReferenceCheck-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleReferenceCheck-dummy.m"; sourceTree = "<group>"; };
+		38C530B01CB2EFD7FFF1D88EE44B55DD /* libPods-Webview_Benchmark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Webview_Benchmark.a"; path = "libPods-Webview_Benchmark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A64181A26962CC6F9E2F6C2B7DD84E /* Pods-Webview_Benchmark-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Webview_Benchmark-dummy.m"; sourceTree = "<group>"; };
+		39DAA82F7FAD9AAEB9A914E427924BFC /* CCUIModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCUIModel.h; path = CCUIModel/Classes/CCUIModel.h; sourceTree = "<group>"; };
+		39E99EDECEC6B5C0224B47B51338FDEE /* QQLeakDataUploadCenter.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = QQLeakDataUploadCenter.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDataUploadCenter.mm; sourceTree = "<group>"; };
+		39F867561FD2CE334EAA1B3123A15AD5 /* Pods-Webview_Benchmark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Webview_Benchmark.debug.xcconfig"; sourceTree = "<group>"; };
+		3CAF3C1EC69666D1412E3464FA6FED41 /* HighSpeedLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HighSpeedLogger.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/logger/HighSpeedLogger.h; sourceTree = "<group>"; };
+		43DFAF519330FE91186F860DC473BCE0 /* CLeakedHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CLeakedHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/structures/CLeakedHashmap.mm; sourceTree = "<group>"; };
+		441AD2546DACE4514E3B54F1BF47222F /* CommonMallocLogger.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CommonMallocLogger.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/stack/CommonMallocLogger.mm; sourceTree = "<group>"; };
+		48AD0417FF9A04A9C42442D71499CD50 /* Pods-Webview_Benchmark-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Webview_Benchmark-frameworks.sh"; sourceTree = "<group>"; };
+		49376E1D2440F8F28F6F5A45784345E4 /* CSegmentChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSegmentChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CSegmentChecker.h; sourceTree = "<group>"; };
+		4D430A785A247940E9A8967179B3361C /* OOMDetectorLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOMDetectorLogger.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/logger/OOMDetectorLogger.h; sourceTree = "<group>"; };
+		4DE1F92CE40A791C54200D423AAA5F25 /* QQLeakFileUploadCenter.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = QQLeakFileUploadCenter.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakFileUploadCenter.mm; sourceTree = "<group>"; };
+		5469D7C21493088A15566E71A5D65DEB /* CStackChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CStackChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CStackChecker.mm; sourceTree = "<group>"; };
+		54BE68D29000F84F0AF0DF23C67382E1 /* OOMStatisticsInfoCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOMStatisticsInfoCenter.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/statistic/OOMStatisticsInfoCenter.h; sourceTree = "<group>"; };
+		5C8F5D5E5D28597032BCCE959CED9C2C /* CLeakChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLeakChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/CLeakChecker.h; sourceTree = "<group>"; };
+		5D724CC6A799177AE110E54B83665BE6 /* CStackHelper.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CStackHelper.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/stack/CStackHelper.mm; sourceTree = "<group>"; };
+		60176780A3256E9397B43DA028CEE841 /* libCCUIModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCCUIModel.a; path = libCCUIModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		64693D9FABFC0C47BE6EFC983C3B03F0 /* COOMDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = COOMDetector.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/main/COOMDetector.mm; sourceTree = "<group>"; };
+		68A069F1E41E6361888BAF3CE93AC6B0 /* MemoryIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryIndicator.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/memoryIndicator/MemoryIndicator.h; sourceTree = "<group>"; };
+		6DB0FBB62979F6DAB69256BD23C0D935 /* CLeakChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CLeakChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/CLeakChecker.mm; sourceTree = "<group>"; };
+		6F4AE065829DAC04F62FA7803A7093D8 /* CMallocHook.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CMallocHook.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/hook/CMallocHook.mm; sourceTree = "<group>"; };
+		72DA968B5E1421B22282F3A68072D12F /* Pods-Webview_Benchmark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Webview_Benchmark.release.xcconfig"; sourceTree = "<group>"; };
+		75D825BCF98CAED3A116A148F2FB9E0F /* Pods-Webview_Benchmark-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Webview_Benchmark-resources.sh"; sourceTree = "<group>"; };
+		7D3B5E92D900B1FD8FCCEC5D0F529EA8 /* CMemoryChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMemoryChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CMemoryChecker.h; sourceTree = "<group>"; };
+		7DFC31F9F444BBDDCECAE505E0B50529 /* CCUIModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCUIModel.xcconfig; sourceTree = "<group>"; };
+		82709E6A2607211128642DAE2163F883 /* CircleReferenceCheck.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleReferenceCheck.xcconfig; sourceTree = "<group>"; };
+		84EEAB5F523ACDBC31DAE6939DF0EE68 /* Pods-Webview_Benchmark-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Webview_Benchmark-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85BE27530EC5F9AE97B66C69DB1594BB /* libOOMDetector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libOOMDetector.a; path = libOOMDetector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		89F3150514D9968D6E7365D8BB28E0E1 /* CStackHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CStackHelper.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/stack/CStackHelper.h; sourceTree = "<group>"; };
+		8C55B58441644BDA66F76B92CEE71EB2 /* CLeakedHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLeakedHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/structures/CLeakedHashmap.h; sourceTree = "<group>"; };
+		8D5A1F44B8A463448720E7DB753A7B4A /* libCircleReferenceCheck.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCircleReferenceCheck.a; path = libCircleReferenceCheck.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CB396EE898CE7EF54433BE2F8AED3C /* CircleReferenceCheck-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleReferenceCheck-prefix.pch"; sourceTree = "<group>"; };
+		97179E6C84AE3802E871AD90A815B95B /* OOMMemoryStackTracker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = OOMMemoryStackTracker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/stacktrack/OOMMemoryStackTracker.mm; sourceTree = "<group>"; };
+		973D023DA17BB6EF6ADD3B122908AC31 /* OOMStatisticsInfoCenter.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = OOMStatisticsInfoCenter.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/statistic/OOMStatisticsInfoCenter.mm; sourceTree = "<group>"; };
+		99867057CF9D6E2D1A7689C3EE80920D /* OOMDetector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OOMDetector-dummy.m"; sourceTree = "<group>"; };
+		9A5CA6D6089CB64BF2146C6C8403B850 /* HighSpeedLogger.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = HighSpeedLogger.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/logger/HighSpeedLogger.mm; sourceTree = "<group>"; };
+		A0CBE9B4ABF4EE7AFA736F6DB307AB3D /* COOMDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = COOMDetector.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/main/COOMDetector.h; sourceTree = "<group>"; };
+		A1F6AA09ECEC75C8A36043D1AF75394B /* CBaseHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CBaseHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CBaseHashmap.mm; sourceTree = "<group>"; };
+		A2E15A02152B37FE5C9F5D92606CFA8E /* CCUIModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCUIModel.m; path = CCUIModel/Classes/CCUIModel.m; sourceTree = "<group>"; };
+		A4944A5581EA9CD59B1C88B16E871B58 /* CStacksHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CStacksHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CStacksHashmap.mm; sourceTree = "<group>"; };
+		A519D5C4C87B35761151F3AEDF5FFF42 /* CHeapChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHeapChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CHeapChecker.h; sourceTree = "<group>"; };
+		ABE9FC50072C164E32A8AECDC5EAF22E /* CCUIModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCUIModel-dummy.m"; sourceTree = "<group>"; };
+		AC9FEB69A29A5D63B981A2FD06D4733C /* CHeapChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CHeapChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CHeapChecker.mm; sourceTree = "<group>"; };
+		AE1CFBA1D441750C02200E22DC1EE69B /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fishhook.c; sourceTree = "<group>"; };
+		AE37865873D8099834FCD7A21A9A2B33 /* OOMDetector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OOMDetector.xcconfig; sourceTree = "<group>"; };
+		B422C67E3FA2E4844A6D9DDED8DDF287 /* CStacksHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CStacksHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CStacksHashmap.h; sourceTree = "<group>"; };
+		B56D461EA92E25DCAAF3D4DCE3535FF0 /* QQLeakDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakDeviceInfo.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDeviceInfo.h; sourceTree = "<group>"; };
+		B71955D48033D00E7B18811919117FD3 /* QQLeakMallocStackTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakMallocStackTracker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/QQLeakMallocStackTracker.h; sourceTree = "<group>"; };
+		B76F27ECE5FAA3C2542990541258DA69 /* QQLeakFileUploadCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakFileUploadCenter.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakFileUploadCenter.h; sourceTree = "<group>"; };
+		C2A0944C00CAE36C34CB7A498B65CA1A /* OOMMemoryStackTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOMMemoryStackTracker.h; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/stacktrack/OOMMemoryStackTracker.h; sourceTree = "<group>"; };
+		C2AA0116074A4FDCCD8910BAA3A49CA8 /* AllocationTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AllocationTracker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/hook/AllocationTracker.h; sourceTree = "<group>"; };
+		C38C09086DA9A440BDCAC778C22AF3C5 /* OOMDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = OOMDetector.mm; path = libOOMDetector/libOOMDetector/OOMDetector/OOMDetector/main/OOMDetector.mm; sourceTree = "<group>"; };
+		C40EC668C5203E88B462434FFF2E52BF /* QQLeakChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/Headers/QQLeakChecker.h; sourceTree = "<group>"; };
+		C7092EFDE4557F8AF2744B4C90F1BAAF /* CommonMallocLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CommonMallocLogger.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/stack/CommonMallocLogger.h; sourceTree = "<group>"; };
+		C87533741FCF240EFE02B9C74CB8A4F8 /* QQLeakMallocStackTracker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = QQLeakMallocStackTracker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/QQLeakMallocStackTracker.mm; sourceTree = "<group>"; };
+		CA1D24CF763D86DC768C3591EC161D60 /* CMallocHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMallocHook.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/hook/CMallocHook.h; sourceTree = "<group>"; };
+		CB35C0B5526D0335B6D168ABADA2A04F /* QQLeakDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QQLeakDeviceInfo.m; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDeviceInfo.m; sourceTree = "<group>"; };
+		CD4DB226EFFA9DFE570C59F7515C8EB2 /* OOMDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOMDetector.h; path = libOOMDetector/libOOMDetector/OOMDetector/Headers/OOMDetector.h; sourceTree = "<group>"; };
+		CE9A2122CCFE4439488ACA9F977525AC /* fishhook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fishhook-prefix.pch"; sourceTree = "<group>"; };
+		CE9C1ABCF3BD6B8E9F7A58293AD8CE96 /* CStackChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CStackChecker.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CStackChecker.h; sourceTree = "<group>"; };
+		D4425243155717F1BAEDE971EAF1BFE2 /* CRegisterChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CRegisterChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/memchecker/CRegisterChecker.mm; sourceTree = "<group>"; };
+		D50D203287CA63F8E0A928A90ADA28CD /* CObjcFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CObjcFilter.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/objc/CObjcFilter.h; sourceTree = "<group>"; };
+		DB06E0BD1D07AC91D5BFCF28AA05B4F3 /* CThreadTrackingHashmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CThreadTrackingHashmap.h; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/structures/CThreadTrackingHashmap.h; sourceTree = "<group>"; };
+		E38FECEC8A967D59966C7CDD20402631 /* fishhook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fishhook.xcconfig; sourceTree = "<group>"; };
+		E516AB0E95A20A2721A8BD20B7002821 /* CircleReferenceCheck.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CircleReferenceCheck.m; path = CircleReferenceCheck/Classes/CircleReferenceCheck.m; sourceTree = "<group>"; };
+		E71101611CE12C9FB5366CC4C4191ABC /* fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		E7B6E245705160B804C43FBC0E2F8923 /* QQLeakChecker.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = QQLeakChecker.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/main/QQLeakChecker.mm; sourceTree = "<group>"; };
+		ED791F4C683B2822DE3BFEC19310423C /* libOOMDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libOOMDetector.h; path = libOOMDetector/libOOMDetector/libOOMDetector.h; sourceTree = "<group>"; };
+		ED973898259B52A99C8CD011ACD54CF7 /* OOMDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OOMDetector-prefix.pch"; sourceTree = "<group>"; };
+		F4BC7CEC52F6F3773202830D8A72C47A /* CPtrsHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CPtrsHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/common/structure/CPtrsHashmap.mm; sourceTree = "<group>"; };
+		F6A75AB05FAB506E61D319FEB07A5FF9 /* QQLeakDataUploadCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakDataUploadCenter.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/upload/QQLeakDataUploadCenter.h; sourceTree = "<group>"; };
+		FBCB9C97C4B37555BAEBACAEF37B0D54 /* CThreadTrackingHashmap.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = CThreadTrackingHashmap.mm; path = libOOMDetector/libOOMDetector/OOMDetector/QQLeak/structures/CThreadTrackingHashmap.mm; sourceTree = "<group>"; };
+		FFC4328E02F848659ACB1ECC208B3BF0 /* QQLeakPredefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QQLeakPredefines.h; path = libOOMDetector/libOOMDetector/OOMDetector/common/QQLeakPredefines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08B6DE4A224CC4DDBB9D69079FB5E25C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D5FD44C41402E5C4D4455AB4DE002B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD44A1A0A0C3B0022087AA7CCBBEEF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74E67F283D9B997585C94397C847C0F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911F3A4254C213E60E6358AE260CB822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05B22A0F527EC392577970AD4A17BD1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				158025AA4825EB9C281F3F38CA603ADF /* CCUIModel */,
+				681A49AFBC7B0FD3387E510F5D9C7F57 /* CircleReferenceCheck */,
+				F622D89655D7935C3BF6942CB2222837 /* fishhook */,
+				C91DC837279AD821BDF4A19D16AA4975 /* OOMDetector */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0F1678C5168A53FA5CC4E48E2BCA01C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E38FECEC8A967D59966C7CDD20402631 /* fishhook.xcconfig */,
+				3383E00E45B23DBB4D0CE67CA3B2B9B1 /* fishhook-dummy.m */,
+				CE9A2122CCFE4439488ACA9F977525AC /* fishhook-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/fishhook";
+			sourceTree = "<group>";
+		};
+		12138F73488FE7AAEAB421020C879FD8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F712E57094375F5AA7F53B9B6640A24 /* oomgif.gif */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		158025AA4825EB9C281F3F38CA603ADF /* CCUIModel */ = {
+			isa = PBXGroup;
+			children = (
+				39DAA82F7FAD9AAEB9A914E427924BFC /* CCUIModel.h */,
+				A2E15A02152B37FE5C9F5D92606CFA8E /* CCUIModel.m */,
+				7E3CFDA9B2C57F902602B3D8DC45548D /* Support Files */,
+			);
+			name = CCUIModel;
+			path = CCUIModel;
+			sourceTree = "<group>";
+		};
+		3FA196D3BB85CD4BB23A948065166634 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3D1BB35A9FE27CC55A990150E3DB746 /* Pods-Webview_Benchmark */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		681A49AFBC7B0FD3387E510F5D9C7F57 /* CircleReferenceCheck */ = {
+			isa = PBXGroup;
+			children = (
+				0D910C83915E9560AEFBEBF66F5D5883 /* CircleReferenceCheck.h */,
+				E516AB0E95A20A2721A8BD20B7002821 /* CircleReferenceCheck.m */,
+				F75F1C5E162BFDF3AD4A39DF3FED80F1 /* Support Files */,
+			);
+			name = CircleReferenceCheck;
+			path = CircleReferenceCheck;
+			sourceTree = "<group>";
+		};
+		7E3CFDA9B2C57F902602B3D8DC45548D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DFC31F9F444BBDDCECAE505E0B50529 /* CCUIModel.xcconfig */,
+				ABE9FC50072C164E32A8AECDC5EAF22E /* CCUIModel-dummy.m */,
+				2CA7034865A1044B985129A101C4C694 /* CCUIModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CCUIModel";
+			sourceTree = "<group>";
+		};
+		9D78B5B1CFE0BEA49685F6A3876A6F95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60176780A3256E9397B43DA028CEE841 /* libCCUIModel.a */,
+				8D5A1F44B8A463448720E7DB753A7B4A /* libCircleReferenceCheck.a */,
+				11703B33F4B0FF8ACFBB8D2B6FECB51E /* libfishhook.a */,
+				85BE27530EC5F9AE97B66C69DB1594BB /* libOOMDetector.a */,
+				38C530B01CB2EFD7FFF1D88EE44B55DD /* libPods-Webview_Benchmark.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C91DC837279AD821BDF4A19D16AA4975 /* OOMDetector */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA0116074A4FDCCD8910BAA3A49CA8 /* AllocationTracker.h */,
+				20834CC9F0C44CA3A237B169B67F6347 /* AllocationTracker.mm */,
+				2DEAA4C2152D4F457D5A132738ABD8AC /* CBaseHashmap.h */,
+				A1F6AA09ECEC75C8A36043D1AF75394B /* CBaseHashmap.mm */,
+				A519D5C4C87B35761151F3AEDF5FFF42 /* CHeapChecker.h */,
+				AC9FEB69A29A5D63B981A2FD06D4733C /* CHeapChecker.mm */,
+				5C8F5D5E5D28597032BCCE959CED9C2C /* CLeakChecker.h */,
+				6DB0FBB62979F6DAB69256BD23C0D935 /* CLeakChecker.mm */,
+				8C55B58441644BDA66F76B92CEE71EB2 /* CLeakedHashmap.h */,
+				43DFAF519330FE91186F860DC473BCE0 /* CLeakedHashmap.mm */,
+				CA1D24CF763D86DC768C3591EC161D60 /* CMallocHook.h */,
+				6F4AE065829DAC04F62FA7803A7093D8 /* CMallocHook.mm */,
+				7D3B5E92D900B1FD8FCCEC5D0F529EA8 /* CMemoryChecker.h */,
+				2F3707C3E3580E9B297D0E75129E92A7 /* CMemoryChecker.mm */,
+				D50D203287CA63F8E0A928A90ADA28CD /* CObjcFilter.h */,
+				0182325FF88C8A8957B7BA4683680452 /* CObjcFilter.mm */,
+				C7092EFDE4557F8AF2744B4C90F1BAAF /* CommonMallocLogger.h */,
+				441AD2546DACE4514E3B54F1BF47222F /* CommonMallocLogger.mm */,
+				A0CBE9B4ABF4EE7AFA736F6DB307AB3D /* COOMDetector.h */,
+				64693D9FABFC0C47BE6EFC983C3B03F0 /* COOMDetector.mm */,
+				3295AE64483B247AF8FAA3B185B8F797 /* CPtrsHashmap.h */,
+				F4BC7CEC52F6F3773202830D8A72C47A /* CPtrsHashmap.mm */,
+				1720E8BAC11A8AE136998C65E9DB7A0B /* CRegisterChecker.h */,
+				D4425243155717F1BAEDE971EAF1BFE2 /* CRegisterChecker.mm */,
+				49376E1D2440F8F28F6F5A45784345E4 /* CSegmentChecker.h */,
+				0EC3CD3774A72B34B5F4482FDBDEC604 /* CSegmentChecker.mm */,
+				CE9C1ABCF3BD6B8E9F7A58293AD8CE96 /* CStackChecker.h */,
+				5469D7C21493088A15566E71A5D65DEB /* CStackChecker.mm */,
+				89F3150514D9968D6E7365D8BB28E0E1 /* CStackHelper.h */,
+				5D724CC6A799177AE110E54B83665BE6 /* CStackHelper.mm */,
+				B422C67E3FA2E4844A6D9DDED8DDF287 /* CStacksHashmap.h */,
+				A4944A5581EA9CD59B1C88B16E871B58 /* CStacksHashmap.mm */,
+				DB06E0BD1D07AC91D5BFCF28AA05B4F3 /* CThreadTrackingHashmap.h */,
+				FBCB9C97C4B37555BAEBACAEF37B0D54 /* CThreadTrackingHashmap.mm */,
+				3CAF3C1EC69666D1412E3464FA6FED41 /* HighSpeedLogger.h */,
+				9A5CA6D6089CB64BF2146C6C8403B850 /* HighSpeedLogger.mm */,
+				ED791F4C683B2822DE3BFEC19310423C /* libOOMDetector.h */,
+				68A069F1E41E6361888BAF3CE93AC6B0 /* MemoryIndicator.h */,
+				125DA2C9ED31A7802C0EDD0A98753379 /* MemoryIndicator.m */,
+				CD4DB226EFFA9DFE570C59F7515C8EB2 /* OOMDetector.h */,
+				C38C09086DA9A440BDCAC778C22AF3C5 /* OOMDetector.mm */,
+				4D430A785A247940E9A8967179B3361C /* OOMDetectorLogger.h */,
+				2D33E0CF4F4110720B9B7F86B3295377 /* OOMDetectorLogger.mm */,
+				C2A0944C00CAE36C34CB7A498B65CA1A /* OOMMemoryStackTracker.h */,
+				97179E6C84AE3802E871AD90A815B95B /* OOMMemoryStackTracker.mm */,
+				54BE68D29000F84F0AF0DF23C67382E1 /* OOMStatisticsInfoCenter.h */,
+				973D023DA17BB6EF6ADD3B122908AC31 /* OOMStatisticsInfoCenter.mm */,
+				C40EC668C5203E88B462434FFF2E52BF /* QQLeakChecker.h */,
+				E7B6E245705160B804C43FBC0E2F8923 /* QQLeakChecker.mm */,
+				F6A75AB05FAB506E61D319FEB07A5FF9 /* QQLeakDataUploadCenter.h */,
+				39E99EDECEC6B5C0224B47B51338FDEE /* QQLeakDataUploadCenter.mm */,
+				B56D461EA92E25DCAAF3D4DCE3535FF0 /* QQLeakDeviceInfo.h */,
+				CB35C0B5526D0335B6D168ABADA2A04F /* QQLeakDeviceInfo.m */,
+				B76F27ECE5FAA3C2542990541258DA69 /* QQLeakFileUploadCenter.h */,
+				4DE1F92CE40A791C54200D423AAA5F25 /* QQLeakFileUploadCenter.mm */,
+				B71955D48033D00E7B18811919117FD3 /* QQLeakMallocStackTracker.h */,
+				C87533741FCF240EFE02B9C74CB8A4F8 /* QQLeakMallocStackTracker.mm */,
+				FFC4328E02F848659ACB1ECC208B3BF0 /* QQLeakPredefines.h */,
+				12138F73488FE7AAEAB421020C879FD8 /* Resources */,
+				FF71181A03FC12AB7B0025132A159FD2 /* Support Files */,
+			);
+			name = OOMDetector;
+			path = OOMDetector;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				05B22A0F527EC392577970AD4A17BD1C /* Pods */,
+				9D78B5B1CFE0BEA49685F6A3876A6F95 /* Products */,
+				3FA196D3BB85CD4BB23A948065166634 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3D1BB35A9FE27CC55A990150E3DB746 /* Pods-Webview_Benchmark */ = {
+			isa = PBXGroup;
+			children = (
+				84EEAB5F523ACDBC31DAE6939DF0EE68 /* Pods-Webview_Benchmark-acknowledgements.markdown */,
+				139E473FD0E04B8EE54364A029A51CD7 /* Pods-Webview_Benchmark-acknowledgements.plist */,
+				39A64181A26962CC6F9E2F6C2B7DD84E /* Pods-Webview_Benchmark-dummy.m */,
+				48AD0417FF9A04A9C42442D71499CD50 /* Pods-Webview_Benchmark-frameworks.sh */,
+				75D825BCF98CAED3A116A148F2FB9E0F /* Pods-Webview_Benchmark-resources.sh */,
+				39F867561FD2CE334EAA1B3123A15AD5 /* Pods-Webview_Benchmark.debug.xcconfig */,
+				72DA968B5E1421B22282F3A68072D12F /* Pods-Webview_Benchmark.release.xcconfig */,
+			);
+			name = "Pods-Webview_Benchmark";
+			path = "Target Support Files/Pods-Webview_Benchmark";
+			sourceTree = "<group>";
+		};
+		F622D89655D7935C3BF6942CB2222837 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				AE1CFBA1D441750C02200E22DC1EE69B /* fishhook.c */,
+				E71101611CE12C9FB5366CC4C4191ABC /* fishhook.h */,
+				0F1678C5168A53FA5CC4E48E2BCA01C7 /* Support Files */,
+			);
+			name = fishhook;
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		F75F1C5E162BFDF3AD4A39DF3FED80F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				82709E6A2607211128642DAE2163F883 /* CircleReferenceCheck.xcconfig */,
+				36A5EC46C2584B4CCC90C7A713C478E0 /* CircleReferenceCheck-dummy.m */,
+				93CB396EE898CE7EF54433BE2F8AED3C /* CircleReferenceCheck-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CircleReferenceCheck";
+			sourceTree = "<group>";
+		};
+		FF71181A03FC12AB7B0025132A159FD2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE37865873D8099834FCD7A21A9A2B33 /* OOMDetector.xcconfig */,
+				99867057CF9D6E2D1A7689C3EE80920D /* OOMDetector-dummy.m */,
+				ED973898259B52A99C8CD011ACD54CF7 /* OOMDetector-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OOMDetector";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AEC714123E070A21565F1F17DA3C4F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E937D2813B27A9CDD374B7D2B2489C3 /* AllocationTracker.h in Headers */,
+				F462B3952BACD23789F5439FD2D428C8 /* CBaseHashmap.h in Headers */,
+				C3AEB0FD1D71A9200ABE05CD13D0D807 /* CHeapChecker.h in Headers */,
+				AF3D717F5E6AA2372CA764052AC54F00 /* CLeakChecker.h in Headers */,
+				C47F6BB39DC95AE20A018B1F6E442126 /* CLeakedHashmap.h in Headers */,
+				391D4C561A9BCAEF31740EACFC61F6CE /* CMallocHook.h in Headers */,
+				6BB6891208354B5C9A3D0371EA578B73 /* CMemoryChecker.h in Headers */,
+				0465DFE8003F84148BE42315084C25FF /* CObjcFilter.h in Headers */,
+				047D670AC6E6A2E16848A5E423B9C103 /* CommonMallocLogger.h in Headers */,
+				8A40B2FEC896CA431ADF06AA2DA6C8DF /* COOMDetector.h in Headers */,
+				1360419A73D5C29AAC6C8BD5FB8BE9A3 /* CPtrsHashmap.h in Headers */,
+				C2B4944395D0EB26CAE4AFAB77D8C64B /* CRegisterChecker.h in Headers */,
+				8FCFAC7F189F055ED21F5AD3CB33789F /* CSegmentChecker.h in Headers */,
+				6ED79E8F1BF4DEFE66C5EE94F0A2AE13 /* CStackChecker.h in Headers */,
+				2706232A44F3A172A95B5CFB3423EF05 /* CStackHelper.h in Headers */,
+				F2B2B881141D77699B670111C8D92251 /* CStacksHashmap.h in Headers */,
+				86FF1D203C1FDE72166967C072F6AC5B /* CThreadTrackingHashmap.h in Headers */,
+				8BC1BCC00F2F50F574F8430034823EC7 /* HighSpeedLogger.h in Headers */,
+				954E180C6AB9790ED463728E7FA746DC /* libOOMDetector.h in Headers */,
+				DBE6689F0257A44ED7C225530C49E343 /* MemoryIndicator.h in Headers */,
+				6F98289F1A5552ECDD2243B37A43051E /* OOMDetector.h in Headers */,
+				335FF2115E393185DA345BB985FAE266 /* OOMDetectorLogger.h in Headers */,
+				59E18E11003423B1880B2DC3468A7A16 /* OOMMemoryStackTracker.h in Headers */,
+				38BB275A5BC73F8486478CE589B31E2A /* OOMStatisticsInfoCenter.h in Headers */,
+				8074A4010275669922B1F60798A83074 /* QQLeakChecker.h in Headers */,
+				7F956FDB6052B10733550C0456E4AE96 /* QQLeakDataUploadCenter.h in Headers */,
+				680C8368C18AB72B5C80E5E704DD3E76 /* QQLeakDeviceInfo.h in Headers */,
+				114B78C995785F31B7DC7D466A40EE29 /* QQLeakFileUploadCenter.h in Headers */,
+				29B46C0387FA1AE6F17F2D36DF3BC59B /* QQLeakMallocStackTracker.h in Headers */,
+				B5ED3E39758846A4EEC649C03AC8B6D8 /* QQLeakPredefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521791F6C4DF2961D61A0C6A5A866BAB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA13AC7B7A49ABD8D88470FF7F9DFF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F001C904CD6B704194D396EBBA46F39 /* CCUIModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C9463F12154AC4E145F09109617107F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA262D6B253C8FB87896A5454EAD3BD0 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF9369B49258E483E29A5DBD1503330 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D051D3BC099D9D17A3795AF02794CA4A /* CircleReferenceCheck.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25867B77C67A225C826BCB0CC8BAF26E /* CCUIModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B439146E8627AB1A818F1549B2B84CA /* Build configuration list for PBXNativeTarget "CCUIModel" */;
+			buildPhases = (
+				7BA13AC7B7A49ABD8D88470FF7F9DFF4 /* Headers */,
+				68E3A7A4AEF9230D2B3D4F02BD7CAFCC /* Sources */,
+				6FD44A1A0A0C3B0022087AA7CCBBEEF1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E562E2FE46FDD43B5E46E0C61C9BC3F9 /* PBXTargetDependency */,
+			);
+			name = CCUIModel;
+			productName = CCUIModel;
+			productReference = 60176780A3256E9397B43DA028CEE841 /* libCCUIModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		32BD69475A3946861AFE7B0B355D30E8 /* OOMDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4C79D5CE1289F7C1BCE8C356358112 /* Build configuration list for PBXNativeTarget "OOMDetector" */;
+			buildPhases = (
+				0AEC714123E070A21565F1F17DA3C4F8 /* Headers */,
+				62E3AC645DD9ADEA1B8BD6E410549862 /* Sources */,
+				08B6DE4A224CC4DDBB9D69079FB5E25C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29C82AEBDCFBEED8D4A231C76023FA59 /* PBXTargetDependency */,
+			);
+			name = OOMDetector;
+			productName = OOMDetector;
+			productReference = 85BE27530EC5F9AE97B66C69DB1594BB /* libOOMDetector.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BE33C0B1D7E43E11BAEFD013A2F9C7F8 /* Pods-Webview_Benchmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE33681E2F9C51CDA83B77A4ACF7283 /* Build configuration list for PBXNativeTarget "Pods-Webview_Benchmark" */;
+			buildPhases = (
+				521791F6C4DF2961D61A0C6A5A866BAB /* Headers */,
+				DF915E7C7D1564AE611A6C9F531E6D25 /* Sources */,
+				43D5FD44C41402E5C4D4455AB4DE002B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F29FB6B0395F2543478627C5FB6AD7C /* PBXTargetDependency */,
+				976E3E9C579A5D63EDCB35708DEBEDDB /* PBXTargetDependency */,
+				2C02D29DC006B3A6EA349D93765CD19E /* PBXTargetDependency */,
+				9E2273C47ED6E066754872AA03D62A7A /* PBXTargetDependency */,
+			);
+			name = "Pods-Webview_Benchmark";
+			productName = "Pods-Webview_Benchmark";
+			productReference = 38C530B01CB2EFD7FFF1D88EE44B55DD /* libPods-Webview_Benchmark.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BF42E5C1A2282B0EC99192C33C1A67C2 /* CircleReferenceCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 349AF885BC2E15DF388BDD5127F93F20 /* Build configuration list for PBXNativeTarget "CircleReferenceCheck" */;
+			buildPhases = (
+				9DF9369B49258E483E29A5DBD1503330 /* Headers */,
+				DAC5431F31BFB63A0ABD6CF059EBAE1F /* Sources */,
+				911F3A4254C213E60E6358AE260CB822 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleReferenceCheck;
+			productName = CircleReferenceCheck;
+			productReference = 8D5A1F44B8A463448720E7DB753A7B4A /* libCircleReferenceCheck.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E0184E522F4EBAA7CCAB9AD5AECB9CE4 /* fishhook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED250B473714CEBC64C74C9371AF5A4 /* Build configuration list for PBXNativeTarget "fishhook" */;
+			buildPhases = (
+				7C9463F12154AC4E145F09109617107F /* Headers */,
+				82571C4BA42E4599ECFB294B2A693475 /* Sources */,
+				74E67F283D9B997585C94397C847C0F2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fishhook;
+			productName = fishhook;
+			productReference = 11703B33F4B0FF8ACFBB8D2B6FECB51E /* libfishhook.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9D78B5B1CFE0BEA49685F6A3876A6F95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25867B77C67A225C826BCB0CC8BAF26E /* CCUIModel */,
+				BF42E5C1A2282B0EC99192C33C1A67C2 /* CircleReferenceCheck */,
+				E0184E522F4EBAA7CCAB9AD5AECB9CE4 /* fishhook */,
+				32BD69475A3946861AFE7B0B355D30E8 /* OOMDetector */,
+				BE33C0B1D7E43E11BAEFD013A2F9C7F8 /* Pods-Webview_Benchmark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62E3AC645DD9ADEA1B8BD6E410549862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F858BD1AD069E8AC47060BC58805A /* AllocationTracker.mm in Sources */,
+				082FE51A60FCD0C045141F6A78C6148A /* CBaseHashmap.mm in Sources */,
+				77FCB051CF4B565C0256179564F9B74A /* CHeapChecker.mm in Sources */,
+				1C80D71C4B0D05AB8AB247230F255AB4 /* CLeakChecker.mm in Sources */,
+				287ECC9CF6F8ECAE4E1BDCF9FB3AB762 /* CLeakedHashmap.mm in Sources */,
+				60A2AE8F9F32CD8B9DFBEFFA8793BEBE /* CMallocHook.mm in Sources */,
+				97FB1DA9DB66466D64D5889B1303660E /* CMemoryChecker.mm in Sources */,
+				1B80F98F0D92134C26AD83DAAB339FD4 /* CObjcFilter.mm in Sources */,
+				93CB0A508C972E59F254C4F8EB6CE4F5 /* CommonMallocLogger.mm in Sources */,
+				4FF10D5297B2F92C0E2DA044B77583DC /* COOMDetector.mm in Sources */,
+				24336E82AC76EEF661D779DDB48327AA /* CPtrsHashmap.mm in Sources */,
+				A642E1BA9AB9150BB72D184F153A8636 /* CRegisterChecker.mm in Sources */,
+				FCF5C2DAFBEC14D2229DD8FB2382BE3A /* CSegmentChecker.mm in Sources */,
+				DA920418B306FDC8271B01DED13BA6E2 /* CStackChecker.mm in Sources */,
+				5682AD8167BAC044B8A72604CB21BC8F /* CStackHelper.mm in Sources */,
+				E3F3F642068F3F26966C4407CEE30315 /* CStacksHashmap.mm in Sources */,
+				8C56DD5B1CB5D9FF56FCECB58F1B44CB /* CThreadTrackingHashmap.mm in Sources */,
+				A02CE8F045B717DCA1B92EAA1AE3F822 /* HighSpeedLogger.mm in Sources */,
+				9B744F2E2F5A1ED05074D62AF09B1456 /* MemoryIndicator.m in Sources */,
+				80726F318C91E5105CFAE88F82FF20DF /* OOMDetector-dummy.m in Sources */,
+				7828B989CF684D491D89D26ADBB155AC /* OOMDetector.mm in Sources */,
+				21C6C786673F038D38A1D379B43F8CBD /* OOMDetectorLogger.mm in Sources */,
+				36651C1F68A5FAC68D865854EFCB0CA4 /* OOMMemoryStackTracker.mm in Sources */,
+				89CFC5C85FB4F57C4B8241D447011283 /* OOMStatisticsInfoCenter.mm in Sources */,
+				25BC18BC186050CB709F08FE7A674116 /* QQLeakChecker.mm in Sources */,
+				CE7988E916DA5190C99423F488471AAE /* QQLeakDataUploadCenter.mm in Sources */,
+				28F462E049CF953EDCBB86B713C61042 /* QQLeakDeviceInfo.m in Sources */,
+				87D37A80B2D33829428D2EE8C79AF142 /* QQLeakFileUploadCenter.mm in Sources */,
+				F89602A3338356A8642139148E9BC495 /* QQLeakMallocStackTracker.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E3A7A4AEF9230D2B3D4F02BD7CAFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C8098D86A0D406C85A7B7C703E610BB /* CCUIModel-dummy.m in Sources */,
+				8FC40543FC38C57CAD618567A8BF19DD /* CCUIModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82571C4BA42E4599ECFB294B2A693475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989E7AC2927ECE297470F0F022CC32B4 /* fishhook-dummy.m in Sources */,
+				4EB655A17556EB39A82D4AD276CCB20F /* fishhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC5431F31BFB63A0ABD6CF059EBAE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF182F4056C0C482ACC459DEA4629CA3 /* CircleReferenceCheck-dummy.m in Sources */,
+				B42F109CBEF781BA567C50ED48A83C3A /* CircleReferenceCheck.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF915E7C7D1564AE611A6C9F531E6D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1CC097F0942D83783496CC6CC8EE24 /* Pods-Webview_Benchmark-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F29FB6B0395F2543478627C5FB6AD7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CCUIModel;
+			target = 25867B77C67A225C826BCB0CC8BAF26E /* CCUIModel */;
+			targetProxy = FFCC754538CA226DCF30D216C0715CDF /* PBXContainerItemProxy */;
+		};
+		29C82AEBDCFBEED8D4A231C76023FA59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = E0184E522F4EBAA7CCAB9AD5AECB9CE4 /* fishhook */;
+			targetProxy = 12617471CF379E54C137300E31EE6C5E /* PBXContainerItemProxy */;
+		};
+		2C02D29DC006B3A6EA349D93765CD19E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OOMDetector;
+			target = 32BD69475A3946861AFE7B0B355D30E8 /* OOMDetector */;
+			targetProxy = BC3205E56C283C799EBC456E2B61DC3C /* PBXContainerItemProxy */;
+		};
+		976E3E9C579A5D63EDCB35708DEBEDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleReferenceCheck;
+			target = BF42E5C1A2282B0EC99192C33C1A67C2 /* CircleReferenceCheck */;
+			targetProxy = C699C5DD43C8FD264A0DE9D6DEC7573E /* PBXContainerItemProxy */;
+		};
+		9E2273C47ED6E066754872AA03D62A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = E0184E522F4EBAA7CCAB9AD5AECB9CE4 /* fishhook */;
+			targetProxy = 8AE0F194C759EA53B4F02BE51FE44831 /* PBXContainerItemProxy */;
+		};
+		E562E2FE46FDD43B5E46E0C61C9BC3F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CircleReferenceCheck;
+			target = BF42E5C1A2282B0EC99192C33C1A67C2 /* CircleReferenceCheck */;
+			targetProxy = 28A75CBE5E748A779CC59A261ED932B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01D44EC30C0C244406E501AECD28483D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F867561FD2CE334EAA1B3123A15AD5 /* Pods-Webview_Benchmark.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19C36B6A1B2A9EF64BE11BFA6204F550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DA968B5E1421B22282F3A68072D12F /* Pods-Webview_Benchmark.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A167809C6C97179A416EF8EB257EB58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82709E6A2607211128642DAE2163F883 /* CircleReferenceCheck.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CircleReferenceCheck/CircleReferenceCheck-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CircleReferenceCheck;
+				PRODUCT_NAME = CircleReferenceCheck;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		353809CE0749725BDE7ED954EC2B6A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38FECEC8A967D59966C7CDD20402631 /* fishhook.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = fishhook;
+				PRODUCT_NAME = fishhook;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39C1F0827E671BD7177AEC2E456F9D1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DFC31F9F444BBDDCECAE505E0B50529 /* CCUIModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CCUIModel/CCUIModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CCUIModel;
+				PRODUCT_NAME = CCUIModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F0C48DDC3DD65D868C74475FEB504AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DFC31F9F444BBDDCECAE505E0B50529 /* CCUIModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CCUIModel/CCUIModel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CCUIModel;
+				PRODUCT_NAME = CCUIModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		609D1ECEDCBE1E28582C153B05C54373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE37865873D8099834FCD7A21A9A2B33 /* OOMDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OOMDetector/OOMDetector-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OOMDetector;
+				PRODUCT_NAME = OOMDetector;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F5D2217793A7707B3BC30E365360C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38FECEC8A967D59966C7CDD20402631 /* fishhook.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = fishhook;
+				PRODUCT_NAME = fishhook;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC43BFE2C046BA052669EFD4B3BC0820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C21813649BD626E3EB5533772EC5C07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E550EB5F9AAE54AE209158E83D638515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE37865873D8099834FCD7A21A9A2B33 /* OOMDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OOMDetector/OOMDetector-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OOMDetector;
+				PRODUCT_NAME = OOMDetector;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE8BFD9DEC2AA35728B0AA5261828EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82709E6A2607211128642DAE2163F883 /* CircleReferenceCheck.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CircleReferenceCheck/CircleReferenceCheck-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CircleReferenceCheck;
+				PRODUCT_NAME = CircleReferenceCheck;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		349AF885BC2E15DF388BDD5127F93F20 /* Build configuration list for PBXNativeTarget "CircleReferenceCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A167809C6C97179A416EF8EB257EB58 /* Debug */,
+				EE8BFD9DEC2AA35728B0AA5261828EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC43BFE2C046BA052669EFD4B3BC0820 /* Debug */,
+				C21813649BD626E3EB5533772EC5C07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B439146E8627AB1A818F1549B2B84CA /* Build configuration list for PBXNativeTarget "CCUIModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C1F0827E671BD7177AEC2E456F9D1D /* Debug */,
+				5F0C48DDC3DD65D868C74475FEB504AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE33681E2F9C51CDA83B77A4ACF7283 /* Build configuration list for PBXNativeTarget "Pods-Webview_Benchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D44EC30C0C244406E501AECD28483D /* Debug */,
+				19C36B6A1B2A9EF64BE11BFA6204F550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4C79D5CE1289F7C1BCE8C356358112 /* Build configuration list for PBXNativeTarget "OOMDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609D1ECEDCBE1E28582C153B05C54373 /* Debug */,
+				E550EB5F9AAE54AE209158E83D638515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED250B473714CEBC64C74C9371AF5A4 /* Build configuration list for PBXNativeTarget "fishhook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				353809CE0749725BDE7ED954EC2B6A22 /* Debug */,
+				8F5D2217793A7707B3BC30E365360C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
