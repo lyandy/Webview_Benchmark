@@ -27,6 +27,13 @@
     [uiwv loadRequest:requset];
 }
 
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    // 参考：https://stackoverflow.com/questions/37781529/nsassert-not-work-in-uiwebview-delegate-method
+    //abort();
+    return YES;
+}
+
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
     [super startLoad];
