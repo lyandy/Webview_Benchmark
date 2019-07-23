@@ -13,6 +13,7 @@
 #import "libOOMDetector.h"
 #import "CCUIModel.h"
 #import "IntervalDataCenter.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *countLabel;
@@ -27,15 +28,15 @@
 @end
 
 //static NSString *const url = @"https://www.baidu.com";
-static NSString *const url = @"https://www.ithome.com";
+static NSString *const url = @"https://ad.doubleclick.net/ddm/trackclk/N566410.3083733/B22986968.251748222;dc_trk_aid=447818764;dc_trk_cid=119078338;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=&use_webkit=1";
 //static NSString *const url = @"https://maimai.cn";
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.title = @"Webview Benchmark";
+    //    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:nil];[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     YYFPSLabel *fpsLabel = [[YYFPSLabel alloc] initWithFrame:CGRectMake(0, 100, 60, 20)];
     [self.navigationController.view addSubview:fpsLabel];

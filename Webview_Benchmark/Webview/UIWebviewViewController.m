@@ -7,6 +7,7 @@
 //
 
 #import "UIWebviewViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface UIWebviewViewController ()<UIWebViewDelegate>
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 }
 
 - (void)setupSubview
@@ -25,6 +28,11 @@
     uiwv.delegate = self;
     NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
     [uiwv loadRequest:requset];
+
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        NSString *str = @"(function(){if(window.search_callback)search_callback('{\"keyword\":\"邵然\",\"is_suggestion\":1}')})()";
+//        [uiwv stringByEvaluatingJavaScriptFromString:str];
+//    });
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
