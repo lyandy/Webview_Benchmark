@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *url;
 
+@property (nonatomic, strong) id realWebView;
+
 - (void)setupSubview;
 
 - (void)startLoad;

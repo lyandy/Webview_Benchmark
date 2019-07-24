@@ -25,9 +25,12 @@
     [self.view addSubview:wkwv];
     wkwv.navigationDelegate = self;
     
-    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
+//    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
+//    [wkwv loadRequest:requset];
     
+    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]];
     [wkwv loadRequest:requset];
+    self.realWebView = wkwv;
 }
 
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation

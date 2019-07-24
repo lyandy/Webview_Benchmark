@@ -28,8 +28,9 @@
 @end
 
 //static NSString *const url = @"https://www.baidu.com";
-static NSString *const url = @"https://ad.doubleclick.net/ddm/trackclk/N566410.3083733/B22986968.251748222;dc_trk_aid=447818764;dc_trk_cid=119078338;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=&use_webkit=1";
+//static NSString *const url = @"https://ad.doubleclick.net/ddm/trackclk/N566410.3083733/B22986968.251748222;dc_trk_aid=447818764;dc_trk_cid=119078338;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=&use_webkit=1";
 //static NSString *const url = @"https://maimai.cn";
+static NSString *const url = @"https://ithome.com";
 
 @implementation ViewController
 
@@ -64,7 +65,7 @@ static NSString *const url = @"https://ad.doubleclick.net/ddm/trackclk/N566410.3
 
 - (IBAction)wkwvBtnClicked:(UIButton *)sender
 {
-    self.uiwvBtn.enabled = NO;
+//    self.uiwvBtn.enabled = NO;
     
     WKWebviewViewController *wkwvvc = [[WKWebviewViewController alloc] init];
     wkwvvc.url = url;
@@ -74,7 +75,7 @@ static NSString *const url = @"https://ad.doubleclick.net/ddm/trackclk/N566410.3
 
 - (IBAction)uiwvBtnClicked:(UIButton *)sender
 {
-    self.wkwvBtn.enabled = NO;
+//    self.wkwvBtn.enabled = NO;
     
     UIWebviewViewController *uiwvvc = [[UIWebviewViewController alloc] init];
     uiwvvc.url = url;

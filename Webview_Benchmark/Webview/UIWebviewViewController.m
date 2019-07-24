@@ -26,8 +26,12 @@
     UIWebView *uiwv = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:uiwv];
     uiwv.delegate = self;
-    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
+//    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
+//    [uiwv loadRequest:requset];
+    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]];
     [uiwv loadRequest:requset];
+    
+    self.realWebView = uiwv;
 
 //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
 //        NSString *str = @"(function(){if(window.search_callback)search_callback('{\"keyword\":\"邵然\",\"is_suggestion\":1}')})()";

@@ -19,6 +19,10 @@
 		B64897A72282AC690041EC6F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64897A62282AC690041EC6F /* BaseViewController.m */; };
 		B64897AE2282AE640041EC6F /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64897AA2282AE640041EC6F /* YYWeakProxy.m */; };
 		B64897AF2282AE640041EC6F /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B64897AC2282AE640041EC6F /* YYFPSLabel.m */; };
+		B6D84FB522E7FE6E00515339 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = B6D84FB422E7FE6E00515339 /* test.html */; };
+		B6D84FB722E8346200515339 /* JSTools.js in Resources */ = {isa = PBXBuildFile; fileRef = B6D84FB622E8346200515339 /* JSTools.js */; };
+		B6D84FBD22E8356600515339 /* UIWebView+LongPress.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D84FBC22E8356600515339 /* UIWebView+LongPress.m */; };
+		B6D84FC022E8361E00515339 /* WKWebView+LongPress.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D84FBF22E8361E00515339 /* WKWebView+LongPress.m */; };
 		CBD0EB84FC821D354552DC38 /* libPods-Webview_Benchmark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 748FA62C5BCC4949E1248139 /* libPods-Webview_Benchmark.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,12 @@
 		B64897AB2282AE640041EC6F /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		B64897AC2282AE640041EC6F /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		B64897AD2282AE640041EC6F /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		B6D84FB422E7FE6E00515339 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		B6D84FB622E8346200515339 /* JSTools.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSTools.js; sourceTree = "<group>"; };
+		B6D84FBB22E8356600515339 /* UIWebView+LongPress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+LongPress.h"; sourceTree = "<group>"; };
+		B6D84FBC22E8356600515339 /* UIWebView+LongPress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+LongPress.m"; sourceTree = "<group>"; };
+		B6D84FBE22E8361E00515339 /* WKWebView+LongPress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+LongPress.h"; sourceTree = "<group>"; };
+		B6D84FBF22E8361E00515339 /* WKWebView+LongPress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+LongPress.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,12 @@
 				B64897982282A9F10041EC6F /* main.m */,
 				B63EAF392282C11000E5E9E2 /* IntervalDataCenter.h */,
 				B63EAF3A2282C11000E5E9E2 /* IntervalDataCenter.m */,
+				B6D84FB622E8346200515339 /* JSTools.js */,
+				B6D84FB422E7FE6E00515339 /* test.html */,
+				B6D84FBB22E8356600515339 /* UIWebView+LongPress.h */,
+				B6D84FBC22E8356600515339 /* UIWebView+LongPress.m */,
+				B6D84FBE22E8361E00515339 /* WKWebView+LongPress.h */,
+				B6D84FBF22E8361E00515339 /* WKWebView+LongPress.m */,
 			);
 			path = Webview_Benchmark;
 			sourceTree = "<group>";
@@ -202,6 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D84FB522E7FE6E00515339 /* test.html in Resources */,
+				B6D84FB722E8346200515339 /* JSTools.js in Resources */,
 				B64897962282A9F10041EC6F /* LaunchScreen.storyboard in Resources */,
 				B64897932282A9F10041EC6F /* Assets.xcassets in Resources */,
 				B64897912282A9EF0041EC6F /* Main.storyboard in Resources */,
@@ -267,7 +285,9 @@
 				B64897AE2282AE640041EC6F /* YYWeakProxy.m in Sources */,
 				B64897AF2282AE640041EC6F /* YYFPSLabel.m in Sources */,
 				B64897A72282AC690041EC6F /* BaseViewController.m in Sources */,
+				B6D84FBD22E8356600515339 /* UIWebView+LongPress.m in Sources */,
 				B64897992282A9F10041EC6F /* main.m in Sources */,
+				B6D84FC022E8361E00515339 /* WKWebView+LongPress.m in Sources */,
 				B64897A12282AAF10041EC6F /* WKWebviewViewController.m in Sources */,
 				B648978B2282A9EF0041EC6F /* AppDelegate.m in Sources */,
 				B64897A42282AAFB0041EC6F /* UIWebviewViewController.m in Sources */,
