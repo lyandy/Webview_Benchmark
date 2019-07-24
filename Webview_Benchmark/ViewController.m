@@ -30,7 +30,8 @@
 //static NSString *const url = @"https://www.baidu.com";
 //static NSString *const url = @"https://ad.doubleclick.net/ddm/trackclk/N566410.3083733/B22986968.251748222;dc_trk_aid=447818764;dc_trk_cid=119078338;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=&use_webkit=1";
 //static NSString *const url = @"https://maimai.cn";
-static NSString *const url = @"https://ithome.com";
+//static NSString *const url = @"https://ithome.com";
+static NSString *const url = @"https://api.51datakey.com/h5/importV3/index.html#/taobao?apiKey=9ce2eb5cf7ff4c76950abbde20d32ef3&phone=15914412294&backUrl=http%3A%2F%2Fxexdata-fat.wolaidai.com%2Ftools%2FthirdpartyJump%3Fwldchannel%3Dtaobao_scorpion&idcard=431129199012177015&name=%E8%B5%B5%E7%8F%8D%E6%9E%97&quitOnLoginDone=YES&userId=%257B%2522account%2522%253A%252215914412294%2522%252C%2522cnid%2522%253A%2522431129199012177015%2522%252C%2522name%2522%253A%2522%25E8%25B5%25B5%25E7%258F%258D%25E6%259E%2597%2522%252C%2522product%2522%253A%2522test%2522%257D";
 
 @implementation ViewController
 

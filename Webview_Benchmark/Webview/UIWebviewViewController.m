@@ -26,10 +26,10 @@
     UIWebView *uiwv = [[UIWebView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:uiwv];
     uiwv.delegate = self;
-//    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
-//    [uiwv loadRequest:requset];
-    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]];
+    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
     [uiwv loadRequest:requset];
+//    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]];
+//    [uiwv loadRequest:requset];
     
     self.realWebView = uiwv;
 
