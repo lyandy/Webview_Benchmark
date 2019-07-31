@@ -27,6 +27,8 @@
     
     [self setupSubview];
     
+   
+    
     [self addLongPressGesture];
 }
 
@@ -120,6 +122,20 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if ([self.realWebView isKindOfClass:[UIWebView class]])
+    {
+        ((UIWebView *)self.realWebView).scrollView.contentInset = UIEdgeInsetsMake(40, 0, 0, 0);
+    }
+    else
+    {
+        ((WKWebView *)self.realWebView).scrollView.contentInset = UIEdgeInsetsMake(40, 0, 0, 0);
+    }
+}
+
 - (void)setupSubview
 {
 }
@@ -132,6 +148,7 @@
 
 - (void)didFinishLoad
 {
+    
     // 页面加载结束
     NSTimeInterval interval = [[NSDate date] timeIntervalSince1970] - self.startDate;
     

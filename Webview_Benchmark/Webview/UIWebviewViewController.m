@@ -28,6 +28,7 @@
     uiwv.delegate = self;
     NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
     [uiwv loadRequest:requset];
+//    uiwv.opaque = NO;
 //    NSURLRequest *requset = [[NSURLRequest alloc] initWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]];
 //    [uiwv loadRequest:requset];
     
